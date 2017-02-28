@@ -1,6 +1,10 @@
-function imc(){
+
+var imprimir = document.getElementById("imprimir");
+
+imprimir.onclick = function (){
+
 	var peso = (document.getElementById('peso').value);
-	var talla = (document.getElementById('estatura').value);
+	var talla = (document.getElementById('talla').value);
 	if(peso !== "" || talla !== ""){
 		alert("El indice de tu masa corporal es : " + (peso / Math.pow(talla,2)).toFixed(2));
 	}
@@ -8,3 +12,4 @@ function imc(){
 		alert("Error de Datos");
 	}
 }
+
